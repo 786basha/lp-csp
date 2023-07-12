@@ -1,0 +1,129 @@
+*{
+    padding: 0;margin: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav .links a{
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+}
+nav .links{
+    display: flex;
+}
+
+
+.p1 .box{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: lightcyan;
+}
+
+.p1 .box .txt{
+    text-align: center;
+}
+.p1 .box .txt h1{
+    margin: 20px;
+}
+.p1 .box .txt p{
+    padding: 20px;
+}
+.img{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.btn{
+    margin: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn a button{
+    padding: 10px;
+}
+
+.serv{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.top h2{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.serv1{
+    margin: 20px;
+    padding: 20px;
+    width: 40%;
+    height: fit-content;
+    background-color: lightcyan;
+}
+.p3{
+    background-color: lightcyan;
+    width: 100vw;
+    height: fit-content;
+}
+
+.p3 main{
+    width: 85vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 20px; */
+}
+.p3 main .left h2{
+    margin: 20px 0px;
+}
+
+.p3 main .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+
+
+
+@media only screen and (max-width:550px) {
+    nav{
+        flex-direction: column;
+    }
+    nav .links{
+        margin: auto;
+        width: 90vw;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .p1 .box .txt h1{
+        font-size: 25px;
+    }
+    .serv1{
+        width: 85%;
+        margin: 10px;
+    }
+    main{
+        flex-wrap: wrap;
+    }
+}
