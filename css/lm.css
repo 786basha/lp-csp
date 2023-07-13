@@ -1,0 +1,28 @@
+.links a button{
+    padding: 10px 20px;
+}
+.img h3{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+.mg{
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:480px) {
+    .mg{
+        width: 85%;
+    }
+}

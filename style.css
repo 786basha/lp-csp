@@ -2,22 +2,51 @@
     padding: 0;margin: 0;
 }
 
-nav{
+
+.sticky {
+  position: fixed;
+  top: 0;
+  color: white;
+  padding: -10px;
+  width: 100%;
+  background-color: rgb(60, 66, 97);
+  opacity: 0.8;
+  overflow: hidden;
+}
+.sticky + .content {
+    padding-top: 0px;
+  }
+
+#navbar{
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: rgb(60, 66, 97);
 }
-nav .links a{
+#navbar .logo{
+    color: azure;
+    border-bottom: 2px solid yellow;
+}
+#navbar .links a{
     text-decoration: none;
     font-weight: bold;
+    color: aliceblue;
     margin: 10px;
 }
-nav .links{
+
+#navbar .links a:hover{
+    border-bottom: 2px solid red;
+    position: sticky;
+}
+
+#navbar .links{
     display: flex;
 }
 
 
 .p1 .box{
+    margin-top: 7vh;
     width: 100vw;
     height: fit-content;
     display: flex;
@@ -29,6 +58,8 @@ nav .links{
     text-align: center;
 }
 .p1 .box .txt h1{
+    position: relative;
+    top: 20px;
     margin: 20px;
 }
 .p1 .box .txt p{
@@ -97,6 +128,10 @@ nav .links{
     justify-content: center;
     margin-bottom: 20px;
 }
+.p3 .right{
+    display: flex;
+    align-items: center;justify-content: center;
+}
 
 
 
@@ -106,10 +141,14 @@ nav .links{
 
 
 @media only screen and (max-width:550px) {
-    nav{
+    #navbar{
+        display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0;
     }
-    nav .links{
+
+    #navbar .links{
         margin: auto;
         width: 90vw;
         padding: 10px;
@@ -117,7 +156,14 @@ nav .links{
         justify-content: space-evenly;
     }
     .p1 .box .txt h1{
-        font-size: 25px;
+        padding-top: 20px;
+        font-size: 30px;
+    }
+    .p1 .box .img{
+        position: relative;
+    }
+    .p1 .box .img img{
+        width: 90vw;
     }
     .serv1{
         width: 85%;
@@ -125,5 +171,8 @@ nav .links{
     }
     main{
         flex-wrap: wrap;
+    }
+    .p3 .right img{
+        width: 320px;
     }
 }
